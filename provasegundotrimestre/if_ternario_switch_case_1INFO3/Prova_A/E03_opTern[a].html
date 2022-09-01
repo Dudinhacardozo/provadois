@@ -1,0 +1,26 @@
+<script>
+    //USANDO OPERADOR TERNÁRIO USANDO OPERADOR TERNÁRIO USANDO OPERADOR TERNÁRIO
+    
+    //PROBLEMA: Escrita do Texto
+    //Peça para o aluno informar a quantidade de páginas que o documento possui. Também peça para o aluno informar quantos capítulos o texto possui e também informar quantos subcapítulos o texto possui.
+    //Considere que cada página equivale a 3 pontos, cada capítulo equivale a 5 pontos e cada subcapítulo equivale a 8 pontos.
+
+    //Se o texto possuir até 40 pontos, será considerado MEDIANO.
+    //Se o texto possuir mais de 40 pontos, será considerado COMPLEXO.
+    
+    //Calcule os pontos e apresente o nível de dificuldade da escrita do texto.
+
+    const paginas = parseInt(prompt("Qual a quantidade de páginas que o documento possui?"))
+    const texto = parseInt(prompt("Quantos capitulos o texto possui?"))
+    const subcapitulos = parseInt(prompt("Quantos subcapitus o texto possui?"))
+    
+    const pontuaçao = (paginas * 3) + (texto * 5) + (subcapitulos * 8)
+    let respostanatela
+    
+    (pontuaçao <= 40) ? respostanatela =
+    `MEDIANO`
+    : respostanatela = `COMPLEXO`
+    document.write(respostanatela)
+
+
+</script>

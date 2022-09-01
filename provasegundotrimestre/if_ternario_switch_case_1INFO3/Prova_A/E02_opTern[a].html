@@ -1,0 +1,30 @@
+<script>
+    //USANDO OPERADOR TERNÁRIO USANDO OPERADOR TERNÁRIO USANDO OPERADOR TERNÁRIO
+    
+    //PROBLEMA: Média das Turmas
+    //Peça para o Professor de Programação informar a nota de cada uma das cinco turmas de Programação e considere o seguinte cenário:
+    //Se a média for até 4 (inclusive), o programa deverá informar "+- 50 alunos reprovados".
+    //Se a média for até 7 (inclusive), o programa deverá informar "+- 20 alunos reprovados".
+    //Se a média for superior a 7, o programa deverá informar "+- 8 alunos reprovados".
+    //Apresente a mensagem final, de acordo com o cenário descrito acima.
+
+    const nota1 = Number(prompt("informe a primeira nota :"));
+    const nota2 = Number(prompt("informe a segunda nota :"));
+    const nota3 = Number(prompt("informe a terceira nota :"));
+    const nota4 = Number(prompt("Informe a quarta nota:"));
+    const nota5 = Number(prompt("Iforme a quinta nota:"));
+
+    let conceito;
+    
+    const media = (nota1 + nota2 + nota3 + nota4 + nota5 ) / 5;
+    media <= 4 ?
+         (conceito = "+- 50 REPROVADO")
+        : media <= 7 ?
+        (conceito = " +- 20 REPROVADOS")
+        : (conceito = "+- 8REPROVADOS")
+
+    //SAÍDA
+    alert(`${conceito}`);
+    </script>
+
+</script>

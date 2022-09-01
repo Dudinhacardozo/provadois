@@ -1,0 +1,29 @@
+<script>
+    //SWITCH CASE SWITCH CASE SWITCH CASE
+
+    //PROBLEMA: Aplicar desconto no preço do veículo
+    //Peça para o vendedor informar o valor total do veículo e também informar o Ano do Veículo, considerando o seguinte cenário:
+    //Se o ano for igual a 2010 (inclusive), o preço do veículo terá 3% (3/100) de desconto.
+    //Se o ano for igual a 2020 (inclusive), o preço do veículo terá 5% (5/100) de desconto.
+    //Se o ano for superior a 2020, o preço do veículo terá 7% (7/100) de desconto.
+    
+    //Calcule e apresente o preço final do Veículo de acordo com o seu respectivo ano.
+
+   const valor = Number(prompt("Informe o valor total do veiculo"))
+   const ano = Number(prompt("Qual o ano do veiculo?"))
+   let respostanatela;
+   switch (valor) {
+    case 2010:
+        3 * 1.3
+        break;
+    case 2020:
+       5 * 1.05
+    break;
+   
+    default:
+        7 * 1.7
+        break;
+   }
+   document.write(respostanatela)
+   
+</script>
